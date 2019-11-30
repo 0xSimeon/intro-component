@@ -1,0 +1,11 @@
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+
+@mixin clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
