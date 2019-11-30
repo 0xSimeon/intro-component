@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem; }
+
+body {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 1rem;
+  line-height: 1.7;
+  background-color: #ff7a7a;
+  background-image: url(../images/bg-intro-desktop.png);
+  background-size: cover;
+  background-blend-mode: normal; }
+
+.landing__heading {
+  color: #fff;
+  margin-top: 40%; }
+  .landing__heading-primary {
+    font-size: 5rem;
+    line-height: 1.1;
+    margin-bottom: 2rem; }
+  .landing__heading-text {
+    font-size: 1.6rem; }
+
+.cta__info {
+  width: 90%;
+  padding: 1rem;
+  background-color: #6055a5;
+  border-radius: 1rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5rem;
+  box-shadow: 0.1rem 1rem 0 rgba(62, 60, 73, 0.15);
+  color: #fff; }
+
+form {
+  width: 90%;
+  height: 50rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  margin: 0 auto;
+  box-shadow: 0.1rem 1rem 0 rgba(62, 60, 73, 0.15);
+  margin-top: 2rem; }
+
+fieldset {
+  border: none; }
+
+input {
+  padding: 1rem;
+  display: block;
+  width: 85%;
+  margin: 4rem auto;
+  border-radius: 0.5rem;
+  border: 1.5px solid #f8dddd; }
+
+.form__terms {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 1rem;
+  color: #938cb8;
+  margin: 0 auto;
+  display: block;
+  font-weight: 500; }
+
+a {
+  text-decoration: none;
+  color: #ff7a7a;
+  font-weight: bold; }
+
+footer {
+  margin: 4rem auto; }
+
+.attribution {
+  font-size: 1.6rem;
+  text-align: center;
+  font-style: italic;
+  color: #fff; }
+
+.attribution a {
+  color: #3e52a3; }
+
+button {
+  padding: 1rem;
+  margin: 0 auto 1rem auto;
+  display: block;
+  width: 85%;
+  color: #fff;
+  background-color: #38cc8c;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 1px solid #38cc8c;
+  cursor: pointer; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  content: "";
+  display: table;
+  clear: both; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) /2); }
