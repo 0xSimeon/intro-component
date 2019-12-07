@@ -7,5 +7,73 @@
 @mixin clearfix {
     content: "";
     display: table;
-    clear: both;
+    clear: both;   
 }
+
+
+/*MEDIA QUERY MANAGER
+
+0 - 600px ==> phone
+
+600px - 900px  ==> Tablet-portrait
+
+900px - 1200px ==> Tablet-Landscape
+
+1200px - 1800px ==> normal styles
+
+1800px+ ==> big desktop
+
+
+
+
+$breakpoint ARGUMENTS
+
+phone <= 600px;
+tab-port <= 900px
+tab-land <= 1200px
+
+big-screen >= 1800px
+
+*/
+
+/* ORDER FOR MEDIA QUERY SETUP:
+Base + Typography > general layout + grid > page layout  >  components
+
+*/
+
+@mixin respond ($breakpoint) {
+
+
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5rem) {
+      @content;
+    }
+
+  }
+
+
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25rem) {
+      @content;
+    }
+
+  }
+
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+
+  }
+
+  @if $breakpoint == big-screen {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+
+  }
+} 
+
+
+
+

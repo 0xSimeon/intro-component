@@ -1,14 +1,24 @@
 // Importing all sass files
 
+
+// Abstracts
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
+
+// Base scss files
 @import "base/base";
 @import "base/typography";
 
+// Components
 @import "components/button"; 
-
+@import "components/form"; 
+ 
+// Layouts files
+@import "layout/footer";
 @import "layout/grid";
+@import "layout/main";
+
 
 
 

@@ -1,0 +1,57 @@
+
+// FORM STYLING STARTS HERE
+
+form {
+	width: 90%;
+	height: 50rem;
+	background-color: $color-white;
+	border-radius: 2rem;
+	margin: 2rem auto 3rem auto;
+	box-shadow: 0.1rem 1rem 0 rgba($color-dark-blue, 0.15); 
+    
+    
+}
+
+fieldset {
+	border: none;
+}
+
+input {
+	font-family: inherit;
+	font-size: 1.5rem;
+	color: inherit;
+	padding: 1.5rem;  
+	display: block;
+	width: 85%;
+	margin: 4rem auto;
+	border-radius: 0.5rem;
+	border: 1.5px solid rgb(248, 221, 221);
+	
+	
+	&:focus {
+		outline: none;
+		box-shadow: 0 1rem 3rem rgba($color-black, .1);
+		border-bottom: 3px solid $color-primary;
+	}
+
+	&:focus:invalid {
+		border-bottom: 3px solid $color-red;
+	}
+
+	&::-webkit-placeholder {
+		color: $color-grey-light; 
+	}
+
+
+}
+.form__terms {
+	font-size: 1.2rem;
+	text-align: center;
+	margin-top: 1rem;
+	color: #938cb8;
+	margin: 0 auto;
+	display: block;
+	font-weight: 500;  
+}
+
+// FORM STYLES ENDS HERE.

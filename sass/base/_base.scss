@@ -1,18 +1,30 @@
 *,
 *::before,
 *::after {
-    @include reset;
+	@include reset;
 }
 
-
 html {
-    font-size: 62.5%;
+	font-size: 62.5%;
+
+	@include respond(tab-land) {
+		font-size: 56.25%;
+	}
+
+	@include respond(tab-port) {
+		font-size: 50%;
+	}
+
+	@include respond(big-screen) {
+		font-size: 70%;
+	}
 }
 
 body {
-    box-sizing: border-box;
-    font-size: $default-font-size;
+	box-sizing: border-box;
 }
 
-
-
+::selection {
+	background-color: $color-red;
+	color: $color-white;
+}

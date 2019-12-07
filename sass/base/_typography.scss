@@ -2,19 +2,28 @@ body {
 	font-family: $default-font;
 	font-size: $default-font-size;
 	font-weight: 400;
-	padding: 1rem;
+	padding: 3rem;
 	line-height: 1.7;
-	background-color: $color-red;
-	background-image: url(../images/bg-intro-desktop.png);
-	background-size: cover;
-	background-blend-mode: normal;
+
+	@include respond (phone) {
+		padding: 0;
+	}
+	
 }
 
 .landing__heading {
 	color: $color-white;
 	margin-top: 40%;
 
-	&-primary {
+	@include respond(tab-port) {
+		margin-top: 3rem; 
+	}
+
+	@include respond(phone) {
+		margin-top: 3rem; 
+	}
+
+	&-primary { 
 		font-size: 5rem;
 		line-height: 1.1;
 		margin-bottom: 2rem;
@@ -22,6 +31,10 @@ body {
 
 	&-text {
 		font-size: $default-font-size;
+
+		@include respond (phone) {
+			font-size: 2rem; 
+		}
 	}
 }
 
@@ -38,58 +51,7 @@ body {
 	color: $color-white;
 }
 
-// FORM STYLING STARTS HERE
 
-form {
-	width: 90%;
-	height: 50rem;
-	background-color: $color-white;
-	border-radius: 2rem;
-	margin: 0 auto;
-	box-shadow: 0.1rem 1rem 0 rgba($color-dark-blue, 0.15);
-	margin-top: 2rem;
-}
 
-fieldset {
-	border: none;
-}
 
-input {
-	padding: 1rem;
-	display: block;
-	width: 85%;
-	margin: 4rem auto;
-	border-radius: 0.5rem;
-	border: 1.5px solid rgb(248, 221, 221);
-}
-.form__terms {
-	font-size: 1.2rem;
-	text-align: center;
-	margin-top: 1rem;
-	color: #938cb8;
-	margin: 0 auto;
-	display: block;
-	font-weight: 500;
-}
 
-// FORM STYLES ENDS HERE.
-
-a {
-	text-decoration: none;
-	color: $color-red;
-	font-weight: bold;
-}
-
-footer {
-	margin: 4rem auto;
-}
-
-.attribution {
-	font-size: $default-font-size;
-	text-align: center;
-	font-style: italic;
-	color: $color-white;
-}
-.attribution a {
-	color: $color-attribution;
-}
