@@ -21,6 +21,7 @@ The challenge was to build out this introductory component and get it looking as
 * CSS3
 * SASS
 * NPM
+* BEM METHODOLOGY 
 
 **Link to published page:** https://simeon4real.github.io/Frontendmentor-challenge/
 
