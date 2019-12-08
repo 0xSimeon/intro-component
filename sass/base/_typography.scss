@@ -2,13 +2,7 @@ body {
 	font-family: $default-font;
 	font-size: $default-font-size;
 	font-weight: 400;
-	padding: 3rem;
 	line-height: 1.7;
-
-	@include respond (phone) {
-		padding: 0;
-	}
-	
 }
 
 .landing__heading {
@@ -16,24 +10,29 @@ body {
 	margin-top: 40%;
 
 	@include respond(tab-port) {
-		margin-top: 3rem; 
+		margin-top: 40%;
 	}
 
 	@include respond(phone) {
-		margin-top: 3rem; 
+		margin-top: 3rem;
+		text-align: center;
 	}
 
-	&-primary { 
+	&-primary {
 		font-size: 5rem;
 		line-height: 1.1;
 		margin-bottom: 2rem;
+
+		@include respond(phone) {
+			font-size: 4rem;
+		}
 	}
 
 	&-text {
 		font-size: $default-font-size;
 
-		@include respond (phone) {
-			font-size: 2rem; 
+		@include respond(phone) {
+			font-size: 2rem;
 		}
 	}
 }
@@ -41,17 +40,13 @@ body {
 // CALL TO ACTION BOX --
 .cta__info {
 	width: 90%;
-	padding: 1rem;
+	padding: 1.5rem;
 	background-color: $color-accent-blue;
 	border-radius: 1rem;
 	text-align: center;
+	font-size: 2rem;
 	margin: 0 auto;
 	margin-top: 5rem;
 	box-shadow: 0.1rem 1rem 0 rgba($color-dark-blue, 0.15);
 	color: $color-white;
 }
-
-
-
-
-

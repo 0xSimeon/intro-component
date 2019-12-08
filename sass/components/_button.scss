@@ -1,14 +1,13 @@
 button {
-    padding: 1rem;
-    margin: 0 auto 1rem auto;  
-    display: block;
-    width: 85%;
-    color: $color-white; 
-    background-color: $color-green;
-    text-transform: uppercase;
-    font-weight: 600;
-    border-radius: 5px; 
-    border: 1px solid $color-green;
-    cursor: pointer;
-    
-} 
+	padding: 2rem;
+	margin: 0 auto 1rem auto;
+	display: block;
+	width: 85%;
+	color: $color-white;
+	background-color: $color-green;
+	text-transform: uppercase;
+	font-weight: 600;
+	border-radius: 5px;
+	border: 1px solid $color-green;
+	cursor: pointer;
+}
