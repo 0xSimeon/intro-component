@@ -41,39 +41,35 @@
 
       <!--THE FORM MARKUP-->
 
-      <form>
+      <form class="form">
         <fieldset>
-        <label for="first-name"></label>
-      <input type="text" id="first-name" placeholder="First Name"> 
+        <label class="form__label" for="first-name"></label>
+      <input class="form__input" type="text" id="first-name" placeholder="First Name"> 
 
-      <label for="last-name"></label>
-      <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+      <label class="form__label" for="last-name"></label>
+      <input class="form__input" type="text" id="last-name" name="last-name" placeholder="Last Name" required>
 
-      <label for="email"></label>
-      <input type="email" id="email" placeholder="Email Address" required>
+      <label class="form__label" for="email"></label>
+      <input class="form__input" type="email" id="email" placeholder="Email Address" required>
 
-      <label for="password"></label>
-      <input type="password" id="password" placeholder="Password" name="password" required>
+      <label class="form__label" for="password"></label>
+      <input class="form__input" type="password" id="password" placeholder="Password" name="password" required>
 
       <button type="submit"> Claim your free trial</button>
       
      
       
       </fieldset>
-      <span class="form__terms"> By clicking the button, you are agreeing to our <a href="#" target="_blank">Terms and
+      <span class="form__terms"> By clicking the button, you are agreeing to our <a class="form__link" href="#" target="_blank">Terms and
           Services</a></span>
     </form>
 </div>
-
-
-  
-  </main>
+</main>
 <footer class="footer">
   <p class="footer__attribution">
     Challenge by <a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a class="footer__link" href="#">Simeon Udoh</a>.
   </p>
 </footer>
-  
 </body>
 </html>
